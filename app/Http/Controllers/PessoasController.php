@@ -19,6 +19,11 @@ class PessoasController extends Controller
         return view('pessoas.criar');
     }
 
+    public function contato()
+    {
+        return view('pessoas.contato');
+    }
+
     public function show(Pessoas $pessoas)
     {
         return view('pessoas.show', compact('pessoas'));

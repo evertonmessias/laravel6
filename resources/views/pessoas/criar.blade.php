@@ -4,8 +4,10 @@
 
 @include('layout')
 
+<?php $path = '/testes/php/laravel6/public/';?>
+
 <fieldset class="formulario criar">
-    <form action="/pessoas" method="POST">
+    <form action="{{$path}}pessoas" method="POST">
         {{csrf_field()}}
         <p><strong>CRIAR REGISTRO</strong></p><br>
         <p>Nome:<input type="text" name="nome"></p>
