@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function () {return view('home');});
+/*
+Route::middleware(['auth'])->group(function(){
+    Route::get('lista', 'AgendaController@lista');
+    Route::get('criar', 'AgendaController@criar');
+    Route::post('agenda','AgendaController@store');
+    Route::get('contato','AgendaController@contato');
+    Route::get('show/{agenda}', 'AgendaController@show');
+    Route::get('show/{agenda}/edit', 'AgendaController@edit');
+    Route::get('show/{agenda}/del', 'AgendaController@del');
+    Route::put('update/{agenda}', 'AgendaController@update');
+    Route::delete('destroy/{agenda}', 'AgendaController@destroy');
+    Route::get('/home', 'HomeController@index');
+    Route::get('show/{agenda}/anotacao', 'AgendaController@anotacao');
+    Route::put('envio/{agenda}', 'AnotacaoController@envio');
 });
+Auth::routes();
+*/
