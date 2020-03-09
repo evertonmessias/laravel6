@@ -5,7 +5,7 @@
 @include('layout')
 
 <fieldset class="formulario criar">
-    <form action="/agenda" method="POST">
+    <form action="/pessoas" method="POST">
         {{csrf_field()}}
         <p><strong>CRIAR REGISTRO</strong></p><br>
         <p>Nome:<input type="text" name="nome"></p>

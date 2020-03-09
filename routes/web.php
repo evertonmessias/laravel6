@@ -15,20 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('home');});
 Route::get('pessoas/lista', 'PessoasController@lista');
-/*
-Route::middleware(['auth'])->group(function(){
-    Route::get('lista', 'AgendaController@lista');
-    Route::get('criar', 'AgendaController@criar');
-    Route::post('agenda','AgendaController@store');
-    Route::get('contato','AgendaController@contato');
-    Route::get('show/{agenda}', 'AgendaController@show');
-    Route::get('show/{agenda}/edit', 'AgendaController@edit');
-    Route::get('show/{agenda}/del', 'AgendaController@del');
-    Route::put('update/{agenda}', 'AgendaController@update');
-    Route::delete('destroy/{agenda}', 'AgendaController@destroy');
-    Route::get('/home', 'HomeController@index');
-    Route::get('show/{agenda}/anotacao', 'AgendaController@anotacao');
-    Route::put('envio/{agenda}', 'AnotacaoController@envio');
-});
-Auth::routes();
-*/
+Route::get('pessoas/criar', 'PessoasController@criar');
+Route::post('pessoas','PessoasController@store');
+Route::get('pessoas/contato','PessoasController@contato');
+Route::get('pessoas/show/{pessoas}', 'PessoasController@show');
+Route::get('pessoas/show/{pessoas}/edit', 'PessoasController@edit');
+Route::get('pessoas/show/{pessoas}/del', 'PessoasController@del');
+Route::put('update/{pessoas}', 'PessoasController@update');
+Route::delete('destroy/{pessoas}', 'PessoasController@destroy');
