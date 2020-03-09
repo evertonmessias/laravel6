@@ -7,21 +7,21 @@
 <table class="tabela show">
 <tr><td><strong>Nome</strong></td><td><strong>Telefone</strong></td>
 <td><strong>E-Mail</strong>&emsp;&emsp;(editar detalhes)</td> </tr>
-<tr><td>{{$agenda->nome}}</td><td>{{$agenda->telefone}}</td>
+<tr><td>{{$pessoas->nome}}</td><td>{{$pessoas->telefone}}</td>
 <td>
  <?php
- if (e($agenda->anotacao['email'])) {
-     echo "<a href='".e($agenda->id)."/anotacao'>".e($agenda->anotacao['email'])."</a>";
+ if (e($pessoas->anotacao['email'])) {
+     echo "<a href='".e($pessoas->id)."/anotacao'>".e($pessoas->anotacao['email'])."</a>";
      }
      else{
-        echo "<a href='".e($agenda->id)."/anotacao'>&nbsp;sem e-mail !</a>";
+        echo "<a href='".e($pessoas->id)."/anotacao'>&nbsp;sem e-mail !</a>";
      } 
  ?>
  </td>
 </tr>
 <tr><td colspan="3">
-<button type="button" onclick="window.location.href='{{$agenda->id}}/edit'">Editar</button>&emsp;&emsp;
-<button type="button" onclick="window.location.href='{{$agenda->id}}/del'">Apagar</button>
+<button type="button" onclick="window.location.href='{{$pessoas->id}}/edit'">Editar</button>&emsp;&emsp;
+<button type="button" onclick="window.location.href='{{$pessoas->id}}/del'">Apagar</button>
 
 </td></tr>
 </table>

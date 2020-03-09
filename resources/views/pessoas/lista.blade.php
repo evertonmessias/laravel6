@@ -10,7 +10,7 @@
  </tr>
 @foreach($pessoas as $s)
 <tr>
-<td><a href="/show/{{$s->id}}">[ {{$s->id}} ]</a></td>
+<td><a href="show/{{$s->id}}">[ {{$s->id}} ]</a></td>
  <td>{{$s->nome}}</td>
  <td>{{$s->telefone}}</td>
  <td>{{$s->email}}</td>

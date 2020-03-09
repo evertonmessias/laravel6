@@ -3,16 +3,16 @@
            <div id="nav">
                 <ul class="menu">
                     <li>
-                        <a href="/home">Início</a>
+                        <a href="">Início</a>
                     </li>
                     <li>
-                        <a href="/lista">Lista</a>
+                        <a href="lista">Lista</a>
                     </li>
                     <li>
-                        <a href="/criar">Criar</a>
+                        <a href="criar">Criar</a>
                     </li>
                     <li>
-                        <a href="/contato">Contato</a>
+                        <a href="contato">Contato</a>
                     </li>
 
                 </ul>                
