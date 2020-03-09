@@ -1,0 +1,5 @@
+﻿Depois de clonar, se der erro use :
+
+composer update –no-scripts
+
+composer dump-autoload
