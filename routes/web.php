@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {return view('home');});
+Route::get('pessoas/lista', 'PessoasController@lista');
 /*
 Route::middleware(['auth'])->group(function(){
     Route::get('lista', 'AgendaController@lista');
